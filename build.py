@@ -1,12 +1,12 @@
 from itertools import permutations,combinations
 def solution(a_list):
     sublist=[]
-    if a_list==None: print '[]'
+    # if a_list==None: print '[]'
     for length in range(len(a_list) + 1):
         for case in combinations(a_list, length):
-            if case==None:
-                print '[]'
-            else:
+            # if case==None:
+            #     print '[]'
+            # else:
                 sublist.append(list(case))
     return sublist
 print solution([10, 20, 30])
